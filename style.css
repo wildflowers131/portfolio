@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px; 
+   text-align: center;
+  }
+
+  header {
+    height: 150px;
+  }
+
+  section, form {
+    height: 200px;
+    background-color: grey;
+  }
+  
+  section:nth-child(2), form {
+    background-color: gainsboro;
+  }
+  
+  footer {
+    background-color: grey;
+    height: 80px;
+  }
