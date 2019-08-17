@@ -1,27 +1,80 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 20px; 
-   text-align: center;
-  }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px; 
+ text-align: center;
+}
+
+.container {
+  position: relative;
+}
+header {
+  height: 200px;
+}
+
+section, form {
+  height: 200px;
+  background-color: grey;
+  margin: 5px;
+}
+
+section:nth-child(2), form {
+  background-color: gainsboro;
+}
+
+footer {
+  background-color: grey;
+  height: 40px;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+ .row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+ } 
+ .column {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 1;
+ }
+ .left-column {
+   background-color: gainsboro;
+   height: 1000px;
+   width: 35%;
+   position: fixed;
+ }
   header {
-    height: 150px;
+    height : 50%;
+    margin-bottom: 10px;
   }
 
-  section, form {
-    height: 200px;
-    background-color: grey;
-  }
-  
-  section:nth-child(2), form {
-    background-color: gainsboro;
-  }
-  
   footer {
-    background-color: grey;
-    height: 80px;
+    height: 50%;
   }
+
+ .right-column {
+   height: 100px;
+   width: 110%;
+   position: relative;
+   left: -155px;
+
+ }
+  section, form {
+    margin-top: 50px;
+
+  }
+  form {
+    background-color: grey;
+  }
+}
