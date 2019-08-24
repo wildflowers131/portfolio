@@ -1,80 +1,235 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 20px; 
- text-align: center;
+ text-align: left;
+ color:	#2C333D;
 }
 
 .container {
   position: relative;
+  margin: 3px;
 }
 header {
-  height: 200px;
+   height: 180px;
+   text-align: center;
+   font-size: 14px;
 }
 
-section, form {
-  height: 200px;
-  background-color: grey;
-  margin: 5px;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://cdn.pixabay.com/photo/2019/05/17/21/40/lake-4210781_960_720.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-section:nth-child(2), form {
-  background-color: gainsboro;
+h1 {
+  color: white;
+}
+section {
+  font-size: 13px;
+  line-height: 2.0em;
+}
+
+section {
+  height: 180px;
+  /* background-color: grey; */
+  margin: 20px 10px;
+}
+
+.projects {
+  height: 420px;
+  border-top: 1px solid gray;
+}
+
+h2 {
+  font-size: 14px;
+  padding-top: 15px;
+}
+h3 {
+  font-size: 13px;
+}
+
+a, p {
+  font-size: 12px;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.projects img {
+  display: block;
+  margin: 20px auto 10px auto;
+}
+
+.links {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin-left: 40%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+form {
+  height: 390px;
+  margin: 0px 10px;
+  border-top: 1px solid gray;
+}
+
+form li {
+  list-style: none;
+  /* position: relative; */
+}
+
+input[type=text], input[type=email], #textarea {
+   width: 97%;
+   margin-bottom: 13px;
+   margin-left: 3px;
+   border: 1px solid lightgray;
+   border-radius: 2px;
+}
+
+.submit {
+  border: 1px solid grey;
+  border-radius: 2px;
+  width: 55px;
+  height: 25px;
+}
+
+.submit:hover {
+  color:#4B7574;
+  font-weight: bold;
+}
+
+#message {
+  height: 120px;
+  position: relative;
+}
+
+.submit {
+  display: block;
+  margin: 0px auto;
 }
 
 footer {
-  background-color: grey;
+  background-color:#34433F;
   height: 40px;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   width: 100%;
+  text-align: center;
 }
 
-@media only screen and (min-width: 992px) {
- .row {
+.social-icon {
+  margin: 10px 5px;
+  width: 20px;
+  height: 20px;
+  
+}
+
+@media screen and (min-width: 992px) {
+  .row {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    width: 100%;
- } 
+  } 
  .column {
    display: flex;
    flex-direction: column;
    flex-basis: 100%;
    flex: 1;
- }
+  }
+
  .left-column {
-   background-color: gainsboro;
    height: 1000px;
    width: 35%;
    position: fixed;
- }
+   /* margin-top: 100px; */
+   background-color: #34433F;
+  }
+
   header {
     height : 50%;
-    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .links {
+    width: 150px;
+  }
+
+  a, p, .submit {
+     font-size: 16px;
+  }
+
+  section {
+  font-size: 17px;
+  line-height: 2.0em;
+  height: 130px;
+  }
+
+  .projects {
+    height: 530px;
+  }
+
+  .projects img {
+   width:500px;
+   height: 300px;
   }
 
   footer {
+    width: 100%;
     height: 50%;
   }
 
  .right-column {
-   height: 100px;
+   /* height: 250px; */
    width: 110%;
    position: relative;
    left: -155px;
-
- }
-  section, form {
-    margin-top: 50px;
+   height: 1000px;
 
   }
+  section, form {
+    margin-top: 50px;
+  }
   form {
-    background-color: grey;
+    height: 450px;
+  }
+
+  input {
+    height: 35px;
+  }
+
+  #message {
+    height: 150px;
+  }
+  .submit {
+    width: 80px;
+  }
+
+ .social-icon {
+  margin: 10px 5px;
+  width: 30px;
+  height: 30px;
   }
 }

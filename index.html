@@ -13,29 +13,49 @@
         <div class = "column">
           <div class = "left-column">
             <header>
-              <h1> Hero </h1>
+              <div class = "hero-image">
+                <h1> Hi, I'm Nelly </h1>
+              </div>
             </header>
             <footer>
-              footer
+              <a href = "https://www.linkedin.com/in/nelly-wu/"><img src = "/images/linkedin-120.png" alt = "linkedin-icon" class = "social-icon"></a>
+              <a href = "github.com/wildflowers131"><img src = "/images/GitHub-icon.png" alt = "github-icon" class = "social-icon"></a>
+              <a href = "mailto:wnelly08@gmail.com"><img src = "/images/mail.png" alt = "mail-icon" class = "social-icon"></a>
             </footer>
           </div>
         </div>
         <div class = "column">
           <div class = "right-column"> 
             <section>
-              Biography
+              I am a Web Developer who is currently based in the New York area. My interests include technology, nature, martial art, music, cuisine, and digital marketing. I love turning ideas into reality. It is rewarding to see applications being made with just code. I am constantly seeking ways to improve myself personally and professionally.
             </section>
 
-            <section>
-              Recent work
+            <section class = "projects">
+              <h2>Recent work</h2>
+              <a href = "https://wildflowers131.github.io/foodHealth/"> <img src = "/images/Quiz_screenshot3.jpg" alt="Nutrition Quiz image" width="330" height= "200"></a>
+              <h3>Nutrition and Health </h3>
+              <p>An interactive quiz application that test users their knowledge on foods and how certain foods can affect their health.</p>
+              <div class = "links">
+                <a href = "https://wildflowers131.github.io/foodHealth/">Demo</a> |
+
+                <a href = "https://github.com/wildflowers131/foodHealth">GitHub</a>
+              </div>
             </section>
 
-            <form>
-              Form to get in touch
+            <form name = "contact" class = "contact" id = "contact">
+              <h2> Get in Touch </h2>
+              <p>Should you need to get in touch, please fill and submit this form. I will get in touch with you soon!</p>
+              <li><input type ="email" placeholder= "Email" id = "email"></li>
+              <li><input type = "text" placeholder = "Subject" id = "subject"></li>
+              <li><textarea id="textarea" class="textarea" name="description" cols="65" rows="05" placeholder = "Message"></textarea><li>
+      
+              <button class = "submit" type = "submit">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
