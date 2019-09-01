@@ -32,18 +32,19 @@ header {
 h1 {
   color: white;
 }
+
 section {
   line-height: 1.6em;
 }
 
 section {
-  height: 180px;
+  height: 230px;
   /* background-color: grey; */
   margin: 20px 10px;
 }
 
 .projects {
-  height: 420px;
+  height: 450px;
   border-top: 1px solid gray;
 }
 
@@ -78,7 +79,7 @@ p {
   display: inline-block;
   width: 120px;
   height: 40px;
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 a {
@@ -144,7 +145,8 @@ footer {
   
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
+
   .row {
    display: flex;
    flex-direction: row;
@@ -159,7 +161,7 @@ footer {
   }
 
  .left-column {
-   height: 2000px;
+   height: 1500px;
    width: 35%;
    position: fixed;
    /* margin-top: 100px; */
@@ -167,7 +169,7 @@ footer {
   }
 
   header {
-    height : 50%;
+    height : 100%;
   }
   
   h2 {
@@ -194,7 +196,7 @@ footer {
   section {
   font-size: 17px;
   line-height: 2.0em;
-  height: 130px;
+  height: 150px;
   }
 
   .projects {
@@ -212,10 +214,9 @@ footer {
   } */
 
  .right-column {
-   /* height: 250px; */
    width: 100%;
    position: relative;
-   left: -155px;
+   left: -70px;
    height: 1000px;
 
   }
@@ -234,7 +235,7 @@ footer {
     margin-top: 50px;
   }
   form {
-    height: 450px;
+    height: 350px;
   }
 
   input {
@@ -252,5 +253,27 @@ footer {
   margin: 10px 18px;
   width: 30px;
   height: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  section {
+    height: 180px;
+  }
+
+  .projects {
+    height: 510px;
+  }
+   form {
+    height: 430px;
+  }
+}
+@media screen and (min-width: 1920px){
+  .left-column{
+    width: 40%;
+  }
+  
+  .links {
+    margin-left: 43%;
   }
 }
