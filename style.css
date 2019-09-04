@@ -38,7 +38,7 @@ section {
 }
 
 section {
-  height: 230px;
+  height: 235px;
   /* background-color: grey; */
   margin: 20px 10px;
 }
@@ -76,10 +76,11 @@ p {
 }
 
 .links {
-  display: inline-block;
+  display: block;
   width: 120px;
   height: 40px;
-  margin-left: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -145,7 +146,7 @@ footer {
   
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px)and (max-width: 1919px){
 
   .row {
    display: flex;
@@ -164,7 +165,6 @@ footer {
    height: 1500px;
    width: 35%;
    position: fixed;
-   /* margin-top: 100px; */
    background-color: #34433F;
   }
 
@@ -218,7 +218,6 @@ footer {
    position: relative;
    left: -70px;
    height: 1000px;
-
   }
 
   footer {
@@ -234,6 +233,7 @@ footer {
   section, form {
     margin-top: 50px;
   }
+
   form {
     height: 350px;
   }
@@ -256,7 +256,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) and (max-width: 1919px){
   section {
     height: 180px;
   }
@@ -267,13 +267,18 @@ footer {
    form {
     height: 430px;
   }
+
+  .left-column {
+    height: 100%;
+  }
+
 }
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px)and (max-width: 1919px){
   .left-column{
     width: 40%;
   }
   
-  .links {
-    margin-left: 43%;
+  /* .links {
+    margin-left: 43%; */
   }
 }
