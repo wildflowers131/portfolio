@@ -9,52 +9,78 @@
   </head>
   <body>
     <div class = "container">
-      <div class = "row">
-        <div class = "column">
-          <div class = "left-column">
             <header>
               <div class = "hero-image">
                 <h1> Hi, I'm Nelly </h1>
               </div>
             </header>
-          </div>
-        </div>
-        <div class = "column">
-          <div class = "right-column"> 
-            <section>
-              <h2>I am a Web Developer who is currently based in the New York area. My interests include technology, nature, martial art, music, cuisine, and digital marketing. I love turning ideas into reality. It is rewarding to see applications being made with just code. I am constantly seeking ways to improve myself personally and professionally.</h2>
-            </section>
 
+            <section class = "about">
+              <h2> About Me </h2>
+                <p>I am a Web Developer who is currently based in the New York area. My interests include technology, nature, martial art, music, cuisine, and digital marketing. I love turning ideas into reality. It is rewarding to see applications being made with just code. I am constantly seeking ways to improve myself personally and professionally.</p>
+            </section>
+            
             <section class = "projects">
-              <h3>Recent work</h3>
-              <a href = "https://wildflowers131.github.io/foodHealth/" target="_blank"> <img src = "images/Quiz_screenshot3.jpg" alt="Nutrition Quiz image" width="250" height= "180"></a>
-              <h4>Nutrition and Health </h4>
-              <p>An interactive quiz application that test users their knowledge on foods and how certain foods can affect their health.</p>
-              <div class = "links">
-                <a href = "https://wildflowers131.github.io/foodHealth/" target="_blank">Demo</a> |
-
-                <a href = "https://github.com/wildflowers131/foodHealth" target="_blank">GitHub</a>
-              </div>
+              <h2>Recent work</h2>
+                <div class = "project1">
+                    <h3>Nutrition and Health </h3>
+                    <p>An interactive quiz application that test users their knowledge on foods and how certain foods can affect their health.</p>
+                    <a href = "https://wildflowers131.github.io/foodHealth/" target="_blank"> <img src = "images/Quiz_screenshot4.jpg" alt="Nutrition Quiz image"></a>
+                    <div class = "links">
+                        <a href = "https://wildflowers131.github.io/foodHealth/" target="_blank">Demo</a> |
+                        <a href = "https://github.com/wildflowers131/foodHealth" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class = "project2">
+                        <h3>Pairfection</h3>
+                        <p>An application designed for people who want to quickly plan the perfect meal with wine recommendation</p>
+                        <a href = "https://wildflowers131.github.io/Pairfection/" target="_blank"> <img src = "images/PairfectionScreenshot.jpg" alt="Pairfection image"></a>
+                        <div class = "links">
+                            <a href = "https://wildflowers131.github.io/Pairfection/" target="_blank">Demo</a> |
+                            <a href = "https://github.com/wildflowers131/Pairfection" target="_blank">GitHub</a>
+                        </div>
+                    </div>
             </section>
-
+            
             <form name = "contact" class = "contact" id = "contact">
-              <h3> Get in Touch </h3>
+              <h2> Get in Touch </h2>
               <p>Should you need to get in touch, please fill and submit this form. I will get in touch with you soon!</p>
-              <input type ="email" placeholder= "Email" id = "email">
-              <input type = "text" placeholder = "Subject" id = "subject">
-              <textarea id="textarea" class="textarea" name="description" cols="65" rows="05" placeholder = "Message"></textarea>
-      
-              <button class = "submit" type = "submit">Submit</button>
+              <table>
+                <tr>
+                    <td>
+                        <label for "email">Email</label>
+                    </td>
+                    <td>
+                        <input type ="email" id = "email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for "subject">Subject</label>
+                    </td>
+                    <td>
+                        <input type = "text" id = "subject">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for "message">Message</label>
+                    </td>
+                    <td>
+                        <textarea id="textarea" id="message" name="message" cols="65" rows="05"></textarea>
+                    </td>
+                </tr>
+            </table>
+            
+                <button class = "submit" type = "submit">Submit</button>
             </form>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <a href = "https://www.linkedin.com/in/nelly-wu/" target="_blank"><img src = "images/linkedin-120.png" alt = "linkedin-icon" class = "social-icon"></a>
-        <a href = "github.com/wildflowers131" target="_blank"><img src = "images/GitHub-icon.png" alt = "github-icon" class = "social-icon"></a>
-        <a href = "mailto:wnelly08@gmail.com" target="_blank"><img src = "images/mail.png" alt = "mail-icon" class = "social-icon"></a>
-      </footer>
-    </div>
+
+            <footer>
+                    <a href = "https://www.linkedin.com/in/nelly-wu/" target="_blank"><img src = "images/linkedin-120.png" alt = "linkedin-icon" class = "social-icon"></a>
+                    <a href = "github.com/wildflowers131" target="_blank"><img src = "images/GitHub-icon.png" alt = "github-icon" class = "social-icon"></a>
+                    <a href = "mailto:wnelly08@gmail.com" target="_blank"><img src = "images/mail.png" alt = "mail-icon" class = "social-icon"></a>
+            </footer> 
+    </div>       
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="script.js"></script>
   </body>
